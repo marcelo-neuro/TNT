@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TNT - Dinamite</title>
+
+    <!-- Chamada dos BS icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Chamada do google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header class="bg-danger fs-5">
+        <nav class="navbar navbar-expand-lg container-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <span class="border border-2 border-dark rounded">
+                        T
+                        <span class="bg-light">N</span>
+                        T
+                    </span>
+                </a>
+                <button class="navbar-toggler border border-light collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggl   e navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="ms-auto collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-2">
+                            <a class="nav-link text-hover" href="#mainRobo">Nosso robô</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link text-hover" href="#galeria">Galeria</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link text-hover" href="#especificacoes">Especificações</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link text-hover" href="#apresentacao">Apresentação</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link text-hover" href="#equipe">Nossa Equipe</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link text-hover" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-danger w-100 p-5" id="mainRobo">
+            <article class="container-md row d-flex align-items-center mx-auto">
+                <div class="col-md-6">
+                    <h1 class="display-3 mb-3 text-light">Nosso Robô</h1>
+                    <p class="fs-3 mb-3">
+                        Conheça o Dinamite, robô que representa a TNT na Robocup, competição de robótica da faculdade
+                        Fiap.
+
+                    </p>
+
+                    <a class="btn btn-outline-light mb-5 p-3 rounded-pill fs-5" href="#apresentacao">
+                        Veja nossa apresentação
+                        <i class="bi bi-arrow-down-circle-fill fs-5 bs-icon"></i>
+                    </a>
+                </div>
+
+                <figure class="col-md-6 ge-3 text-center">
+                    <img src="./images/robo-main.png" alt="Imagem do nosso robô: Dinamite." class="img-fluid" />
+                </figure>
+            </article>
+        </section>
+
+        <section class="bg-light w-100 p-5" id="galeria">
+            <article class="container-md row d-flex align-items-center gx-5 mx-auto">
+                <div class="col-md-6 order-md-1 order-0 mb-5">
+                    <h2 class="display-4 text-danger">Galeria</h2>
+                    <p class="text-dark fs-4">
+                        Não deixe o seu pequeno porte confundí-lo! O Dinamite está pronto para deixar um rastro de
+                        destruição por onde passar com sua agilidade excepcional!
+
+                    </p>
+                </div>
+
+                <div id="carouselExampleIndicators" class="carousel slide col-md-6 order-md-0 order-1">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="./images/robo-car1.jpeg" class="d-block img-fluid border rounded-2"
+                                alt="Foto da frente do robô TNT." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/robo-car2.jpeg" class="d-block img-fluid border rounded-2"
+                                alt="Foto da lateral do robô TNT." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/robo-car3.jpeg" class="d-block img-fluid border rounded-2"
+                                alt="Foto da lateral com led do robô TNT." />
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="./images/robo-car4.jpeg" class="d-block img-fluid border rounded-2"
+                                alt="Foto dos componentes do robô TNT." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/robo-car5.jpeg" class="d-block img-fluid border rounded-2"
+                                alt="Foto da lateral com led aceso na cor azul do robô TNT." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/robo-car6.jpeg" class="d-block img-fluid border rounded-2"
+                                alt="Foto da lateral com led aceso na cor roxa do robô TNT." />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </article>
+        </section>
+
+        <section class="bg-light w-100 p-5" id="especificacoes">
+            <div class="container-md mx-auto mb-5">
+                <h2 class="display-4 text-danger">Especificações</h2>
+            </div>
+
+            <article class="container-md mx-auto px-md-5 mb-4">
+                <h3 class="display-5 text-danger">Dimenções e materiais</h3>
+                <p class="fs-5 text-dark">
+                    Esse robô "pavio curto" possui dimensões de 30cmx26cmx11cm, com alcance de arma de 15 centímetros. O
+                    mesmo é ecológico, pois possui uma base de placa-mãe descartada e paredes de madeira reciclada.
+                </p>
+            </article>
+
+            <article class="container-md mx-auto px-md-5">
+                <h3 class="display-5 text-danger">Arma do robô</h3>
+                <p class="fs-5">
+                    O Dinamite está armado com dois espetos de churrasco, possuindo em suas pontas um bloco de isopor
+                    munido de agulhas. Caso deseje ver a arma em ação, assista ao vídeo abaixo.
+
+                </p>
+
+                <div class="text-center m-auto mb-5 mt-4 ratio ratio-16x9">
+                    <iframe class="px-md-5" width="560" height="315"
+                        src="https://www.youtube.com/embed/ncYo1tP7gTA?si=xamYWnyT9NAoIwUV" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+
+            <article class="container-md mx-auto px-md-5 mb-5">
+                <h3 class="display-5 text-danger">Hardware do robô</h3>
+                <p class="fs-5">
+                    Gostaria de apofundar o seu conhecimento em peças de hardware? Veja abaixo uma descrição detalhada
+                    dos principais componentes de nosso querido Dinamite.
+                </p>
+
+                <!-- inicio accordion -->
+                <div class="accordion accordion-flush px-md-5" id="accordionExample">
+                    <div class="accordion-item border border-secondary rounded">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Arduino Mega
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <p class="col-lg-8 fs-6">
+                                    O Arduino Mega é uma placa que utiliza o microcontrolador ATmega2560. Ele oferece
+                                    uma ampla variedade de pinos de entrada/saída, tornando-o ideal para projetos
+                                    complexos. Com sua capacidade de processamento de dados, memória expansível e
+                                    suporte a numerosos sensores e atuadores, o Arduino Mega permite a criação de
+                                    projetos diversificados, controlando dispositivos e coletando dados de sensores de
+                                    maneira eficaz e flexível.
+
+                                </p>
+
+                                <figure class="col-lg-4 text-center">
+                                    <img src="./images/hd-arduino.jpg" alt="Imagem do Arduino Mega." class="img-fluid">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border border-secondary rounded">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Driver Motor Ponte H - L298N
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <p class="col-lg-8 fs-6">
+                                    O Driver Motor Ponte H L298N é um módulo eletrônico amplamente utilizado para
+                                    controlar motores DC e motores de passo. Ele funciona convertendo sinais de entrada
+                                    em tensões de saída que determinam a direção e a velocidade do motor. A ponte H
+                                    interna permite a inversão de polaridade nas saídas, possibilitando o controle
+                                    bidirecional de no máximo dois motores. Além disso, o L298N pode ser usado em
+                                    conjunto com microcontroladores como o Arduino para automatizar e controlar sistemas
+                                    que envolvam movimento.
+
+                                </p>
+
+                                <figure class="col-lg-4 text-center">
+                                    <img src="./images/hd-ponteH.jpeg" alt="Imagem do driver dos motores Ponte H L298N." class="img-fluid">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border border-secondary rounded">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Motor DC 3 - 6V
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <p class="col-lg-8 fs-6">
+                                    Um Motor DC de 3 a 6V é um dispositivo que converte energia elétrica em movimento
+                                    mecânico. Ele opera com uma tensão contínua de 3 a 6 volts, onde a polaridade da
+                                    tensão determina a direção do giro. Quando a tensão é aplicada aos terminais do
+                                    motor, uma corrente elétrica flui por suas bobinas, criando um campo magnético que
+                                    interage com ímãs permanentes, resultando no movimento de rotação do eixo do motor.
+                                    Ao variar a tensão aplicada, é possível controlar a velocidade do motor.
+
+                                </p>
+
+                                <figure class="col-lg-4 text-center">
+                                    <img src="./images/hd-motor.jpeg" alt="Imagem do motor utilizado no robô." class="img-fluid">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border border-secondary rounded">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Fita de led 12v
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <p class="col-lg-8 fs-6">
+                                    Uma fita de LED de 12V é um dispositivo de iluminação que utiliza diodos emissores
+                                    de luz (LEDs). Ela opera com uma tensão de alimentação de 12 volts, o que é comum em
+                                    muitas aplicações automotivas e residenciais. Quando a tensão de 12V é aplicada aos
+                                    terminais da fita de LED, a corrente elétrica passa pelos LEDs, fazendo com que eles
+                                    emitam luz. A cor e a intensidade da luz podem ser controladas pela eletrônica
+                                    interna da fita de LED ou por um controlador externo, permitindo uma ampla gama de
+                                    efeitos de iluminação, como cores variáveis, piscar e fade.
+
+                                </p>
+
+                                <figure class="col-lg-4 text-center">
+                                    <img src="./images/hd-led.jpg" alt="Imagem da fita de led utilizada no robô." class="img-fluid">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border border-secondary rounded">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Sensores de fim de curso
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <p class="col-lg-8 fs-6">
+                                    Uma chave de fim de curso é um dispositivo de detecção usado em máquinas e sistemas
+                                    automatizados para indicar a posição de um objeto móvel. Funciona através de uma
+                                    alavanca ou atuador que é acionado quando o objeto atinge um ponto específico.
+                                    Quando acionada, a chave de fim de curso fecha ou abre um circuito elétrico,
+                                    enviando um sinal elétrico para um controlador ou dispositivo de controle. Isso
+                                    permite que o sistema saiba que a posição desejada foi alcançada e pode tomar as
+                                    ações necessárias.
+
+                                </p>
+
+                                <figure class="col-lg-4 text-center">
+                                    <img src="./images/hd-chave.jpeg" alt="Imagem da chave de fim de curso utilizada no robô." class="img-fluid">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border border-secondary rounded">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseFive">
+                                Módulo Bluetooth HC-05
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <p class="col-lg-8 fs-6">
+                                    O HC-05 é um módulo de comunicação Bluetooth amplamente utilizado para permitir a comunicação sem fio entre dispositivos. Funciona como uma interface entre dispositivos eletrônicos e a tecnologia Bluetooth. Opera em dois modos principais: mestre e escrav4. No modo escravo, ele pode ser emparelhado com outro dispositivo Bluetooth.  No modo mestre, pode procurar e se conectar a outros dispositivos que se apresentam em modo escravo.
+
+                                </p>
+
+                                <figure class="col-lg-4 text-center">
+                                    <img src="./images/hd-hc-05.jpeg" alt="Imagem do módulo Bluetooth do robô." class="img-fluid">
+                                </figure>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+
+            <article class="container-md mx-auto px-md-5">
+                <h2 class="display-5 text-danger mb-4">Prós e contras</h2>
+
+                <div class="container-md mx-auto px-md-5 row gx-5 gap-5 d-flex justify-content-center">
+                    <div class="col-lg-6 card text-center border border-danger rounded">
+                        <div class="card-body">
+                            <h4 class="card-title display-6 text-danger">Prós</h4>
+
+                            <i class="bi bi-hand-thumbs-up display-2 text-secondary mb-5"></i>
+                            <p class="fs-5">
+                                Por ser composto de materiais leves, é um robô bem ágil e veloz.
+                                Acima disso, graças a sua baixa altura, dificulta o acionamento de sensores de
+                                oponentes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 card text-center border border-danger rounded">
+                        <div class="card-body">
+                            <h4 class="card-title display-6 text-danger">Contras</h4>
+
+                            <i class="bi bi-hand-thumbs-down display-2 text-secondary mb-5"></i>
+                            <p class="fs-5">
+                                Devido ao seu pequeno porte, a arma possui um alcance reduzido. Além disso, como
+                                apresenta quatro motores, ele necessita de duas Pontes H - L298N.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </article>
+
+        </section>
+
+        <section class="bg-danger w-100 p-5" id="apresentacao">
+            <article class="container-md mx-auto">
+                <h2 class="display-4 text-light mb-4">Nossa Luta</h2>
+
+                <p class="fs-4 text-dark mx-auto px-md-4">
+                    A Robocup é uma competição organizada pela Fiap para todos os alunos do primeiro ano do curso de
+                    Sistemas de Informação. Nela, o objetivo é estourar um balão que está em cima do robô adversário.
+                </p>
+
+                <p class="fs-4 text-dark mx-auto px-md-4">
+                    Ao avançar da fase de grupos, os melhores 32 robôs avançam para o Next, evento aberto ao público no
+                    qual ocorre a apresentação das Iniciações Científicas e todos os challenges anuais, incluindo a fase
+                    final da Robocup.
+                </p>
+
+                <p class="fs-4 text-dark mx-auto px-md-4">
+                    Caso tenha curiosidade sobre o evento, veja o vídeo abaixo de uma das lutas do Dinamite ou entre em
+                    contato conosco.
+                </p>
+
+                <a class="btn btn-outline-light mt-3 p-3 rounded-pill fs-5 mx-auto" href="#contato">
+                    Entre em contato
+                    <i class="bi bi-arrow-down-circle-fill fs-5 bs-icon"></i>
+                </a>
+
+                <div class="text-center m-auto my-5 ratio ratio-16x9">
+                    <iframe class="px-md-5" 
+                    width="560" height="315" src="https://www.youtube.com/embed/cOBbRbYSwDs?si=bHKsaqUs65jL4IG9"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+
+        <section class="bg-danger w-100 p-5" id="equipe">
+            <article class="container-md row d-flex align-items-center justify-content-center mx-auto gx-5">
+                <div class="col-lg-6 mb-4 order-lg-1 order-0">
+                    <h2 class="display-3 text-light mb-5">Nossa equipe</h2>
+                    <p class="fs-3 text-dark">
+                        A equipe é composta (da esquerda para a direita) por Lucas Galvão, Rafael Gomes, Marcelo
+                        Furlanetto, Samuel Santolim e Felipe Enge, cinco estudantes de Sistemas de Informação.
+                    </p> border rounded-2
+                </div>
+
+                <figure class="col-lg-6 order-lg-0 order-1 d-flex justify-content-center">
+                    <img src="./images/grupo.jpeg" alt="Foto do grupo TNT." class="img-fluid border rounded-2">
+                </figure>
+            </article>
+        </section>
+
+        <section class="bg-light p-md-5 w-100 my-5" id="contato">
+            <div class="container-md mx-auto px-5">
+                <legend class="display-3 text-danger mb-4">Entre em contato conosco</legend>
+                <p class="fs-3">
+                    Ainda possui alguma dúvida sobre o robô, os membros da equipe ou a competição que estamos
+                    participando? Entre em contato utilizando o formulário abaixo e retornaremos o mais rápido possível.
+                </p>
+            </div>
+
+            <form class="container-md px-5">
+                <label for="email" class="form-label fs-4 text-danger">Endereço de email</label>
+                <input type="email" name="email" id="email"
+                    class="form-control w-50 border border-dark rounded-pill mb-4" placeholder="seuemail@dominio.com"
+                    required>
+
+                <label for="message" class="form-label fs-4 text-danger">Mande sua mensagem</label>
+                <textarea name="message" id="message" class="form-control w-50 border border-dark rounded-4" cols="30"
+                    rows="10" placeholder="Escreva aqui sua mensagem" required></textarea>
+
+                <button type="submit" class="btn btn-outline-danger border border-danger rounded-pill mt-5 px-4 py-2">
+                    Enviar
+                    <i class="bi bi-send bs-icon"></i>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark w-100 p-5 d-flex justify-content-center align-items-center">
+        <p class="fs-6 text-light">
+            Turma 1SIPH - 2023 - Grupo TNT 
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
